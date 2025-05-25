@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a:link,
+a:visited {
+    color: currentColor;
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    width: 220px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    & img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+
+    & h3 {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+
+    & p {
+        margin: 4px 0;
+
+        & img {
+            height: 16px;
+            vertical-align: middle;
+            width: auto;
+        }
+    }
+
+    & a {
+        color: #fff;
+        padding: 6px 12px;
+        background-color: black;
+        border-radius: 5px;
+    }
+}
